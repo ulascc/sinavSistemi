@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinavSistemi", "SinavSistemi\SinavSistemi.csproj", "{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		deneme|Any CPU = deneme|Any CPU
+		deneme2|Any CPU = deneme2|Any CPU
+		deneme3|Any CPU = deneme3|Any CPU
+		deneme4|Any CPU = deneme4|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.deneme|Any CPU.ActiveCfg = deneme|Any CPU
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.deneme|Any CPU.Build.0 = deneme|Any CPU
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.deneme2|Any CPU.ActiveCfg = deneme2|Any CPU
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.deneme2|Any CPU.Build.0 = deneme2|Any CPU
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.deneme3|Any CPU.ActiveCfg = deneme3|Any CPU
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.deneme3|Any CPU.Build.0 = deneme3|Any CPU
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.deneme4|Any CPU.ActiveCfg = deneme4|Any CPU
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.deneme4|Any CPU.Build.0 = deneme4|Any CPU
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D2D4ED-F257-471D-AFED-D188C8DBEAD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {847ABDF1-6095-4C52-A874-0ECDFF95056B}
+	EndGlobalSection
+EndGlobal
