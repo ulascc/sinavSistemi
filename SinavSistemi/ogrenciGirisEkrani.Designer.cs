@@ -36,6 +36,7 @@
             this.ogrKayitOlBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.geriDön2Btn = new System.Windows.Forms.Button();
+            this.ogrSifremiUnuttumLbl = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // kullaniciAdi
@@ -83,7 +84,7 @@
             // 
             // ogrKayitOlBtn
             // 
-            this.ogrKayitOlBtn.Location = new System.Drawing.Point(192, 159);
+            this.ogrKayitOlBtn.Location = new System.Drawing.Point(283, 118);
             this.ogrKayitOlBtn.Name = "ogrKayitOlBtn";
             this.ogrKayitOlBtn.Size = new System.Drawing.Size(75, 23);
             this.ogrKayitOlBtn.TabIndex = 5;
@@ -102,19 +103,31 @@
             // 
             // geriDön2Btn
             // 
-            this.geriDön2Btn.Location = new System.Drawing.Point(732, 1);
+            this.geriDön2Btn.Location = new System.Drawing.Point(729, 2);
             this.geriDön2Btn.Name = "geriDön2Btn";
-            this.geriDön2Btn.Size = new System.Drawing.Size(67, 23);
+            this.geriDön2Btn.Size = new System.Drawing.Size(69, 30);
             this.geriDön2Btn.TabIndex = 7;
             this.geriDön2Btn.Text = "geri dön";
             this.geriDön2Btn.UseVisualStyleBackColor = true;
             this.geriDön2Btn.Click += new System.EventHandler(this.geriDön2Btn_Click);
+            // 
+            // ogrSifremiUnuttumLbl
+            // 
+            this.ogrSifremiUnuttumLbl.AutoSize = true;
+            this.ogrSifremiUnuttumLbl.Location = new System.Drawing.Point(189, 166);
+            this.ogrSifremiUnuttumLbl.Name = "ogrSifremiUnuttumLbl";
+            this.ogrSifremiUnuttumLbl.Size = new System.Drawing.Size(77, 13);
+            this.ogrSifremiUnuttumLbl.TabIndex = 8;
+            this.ogrSifremiUnuttumLbl.TabStop = true;
+            this.ogrSifremiUnuttumLbl.Text = "sifremi unuttum";
+            this.ogrSifremiUnuttumLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ogrSifremiUnuttumLbl_LinkClicked);
             // 
             // ogrenciGirisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ogrSifremiUnuttumLbl);
             this.Controls.Add(this.geriDön2Btn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ogrKayitOlBtn);
@@ -134,11 +147,12 @@
 
         private System.Windows.Forms.Label kullaniciAdi;
         private System.Windows.Forms.Label sifre;
-        private System.Windows.Forms.TextBox ogrenciKullaniciAdiTextBox;
         private System.Windows.Forms.TextBox ogrenciSifreTextBox;
         private System.Windows.Forms.Button ogrGirisBtn;
         private System.Windows.Forms.Button ogrKayitOlBtn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button geriDön2Btn;
+        private System.Windows.Forms.LinkLabel ogrSifremiUnuttumLbl;
+        public System.Windows.Forms.TextBox ogrenciKullaniciAdiTextBox;
     }
 }

@@ -16,5 +16,26 @@ namespace SinavSistemi
         {
             InitializeComponent();
         }
+
+        private void testeBaslaBtn_Click(object sender, EventArgs e)
+        {
+            ogrenciTestEkrani ogrTest = new ogrenciTestEkrani();
+            ogrTest.Show();
+            this.Hide();
+        }
+
+        private void ogrenciCıkısYapBtn_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void ogrenciSonuclarımBtn_Click(object sender, EventArgs e)
+        {
+            ogrenciSonuclarimEkrani ogrSonuclarim = new ogrenciSonuclarimEkrani();
+            ogrSonuclarim.Show();
+            this.Hide();
+        }
     }
 }

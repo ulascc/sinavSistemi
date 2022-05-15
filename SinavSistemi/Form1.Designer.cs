@@ -35,7 +35,7 @@
             // 
             // ogrenciGirisBtn
             // 
-            this.ogrenciGirisBtn.Location = new System.Drawing.Point(150, 164);
+            this.ogrenciGirisBtn.Location = new System.Drawing.Point(160, 164);
             this.ogrenciGirisBtn.Name = "ogrenciGirisBtn";
             this.ogrenciGirisBtn.Size = new System.Drawing.Size(73, 34);
             this.ogrenciGirisBtn.TabIndex = 0;
@@ -45,7 +45,7 @@
             // 
             // adminGirisBtn
             // 
-            this.adminGirisBtn.Location = new System.Drawing.Point(306, 164);
+            this.adminGirisBtn.Location = new System.Drawing.Point(563, 164);
             this.adminGirisBtn.Name = "adminGirisBtn";
             this.adminGirisBtn.Size = new System.Drawing.Size(75, 34);
             this.adminGirisBtn.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // sınavSorumlusuGirisBtn
             // 
-            this.sınavSorumlusuGirisBtn.Location = new System.Drawing.Point(460, 164);
+            this.sınavSorumlusuGirisBtn.Location = new System.Drawing.Point(367, 164);
             this.sınavSorumlusuGirisBtn.Name = "sınavSorumlusuGirisBtn";
             this.sınavSorumlusuGirisBtn.Size = new System.Drawing.Size(75, 34);
             this.sınavSorumlusuGirisBtn.TabIndex = 2;

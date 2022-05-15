@@ -34,6 +34,10 @@
             this.adminKullaniciAdiTextBox = new System.Windows.Forms.TextBox();
             this.AdminSifre = new System.Windows.Forms.Label();
             this.adminKullaniciAdi = new System.Windows.Forms.Label();
+            this.adminKayitOlBtn = new System.Windows.Forms.Button();
+            this.adminSifremiUnuttumLbl = new System.Windows.Forms.LinkLabel();
+            this.sinavSistemiDataSet1 = new SinavSistemi.sinavSistemiDataSet();
+            ((System.ComponentModel.ISupportInitialize)(this.sinavSistemiDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // geriDön3Btn
@@ -54,6 +58,7 @@
             this.adminGirisBtn.TabIndex = 10;
             this.adminGirisBtn.Text = "giris yap";
             this.adminGirisBtn.UseVisualStyleBackColor = true;
+            this.adminGirisBtn.Click += new System.EventHandler(this.adminGirisBtn_Click);
             // 
             // adminSifreTextBox
             // 
@@ -88,11 +93,39 @@
             this.adminKullaniciAdi.TabIndex = 6;
             this.adminKullaniciAdi.Text = "kullanıcı adı";
             // 
+            // adminKayitOlBtn
+            // 
+            this.adminKayitOlBtn.Location = new System.Drawing.Point(176, 171);
+            this.adminKayitOlBtn.Name = "adminKayitOlBtn";
+            this.adminKayitOlBtn.Size = new System.Drawing.Size(75, 23);
+            this.adminKayitOlBtn.TabIndex = 11;
+            this.adminKayitOlBtn.Text = "kayıt ol";
+            this.adminKayitOlBtn.UseVisualStyleBackColor = true;
+            this.adminKayitOlBtn.Click += new System.EventHandler(this.adminKayitOlBtn_Click);
+            // 
+            // adminSifremiUnuttumLbl
+            // 
+            this.adminSifremiUnuttumLbl.AutoSize = true;
+            this.adminSifremiUnuttumLbl.Location = new System.Drawing.Point(174, 216);
+            this.adminSifremiUnuttumLbl.Name = "adminSifremiUnuttumLbl";
+            this.adminSifremiUnuttumLbl.Size = new System.Drawing.Size(77, 13);
+            this.adminSifremiUnuttumLbl.TabIndex = 12;
+            this.adminSifremiUnuttumLbl.TabStop = true;
+            this.adminSifremiUnuttumLbl.Text = "şifremi unuttum";
+            this.adminSifremiUnuttumLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.adminSifremiUnuttumLbl_LinkClicked);
+            // 
+            // sinavSistemiDataSet1
+            // 
+            this.sinavSistemiDataSet1.DataSetName = "sinavSistemiDataSet";
+            this.sinavSistemiDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // adminGirisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.adminSifremiUnuttumLbl);
+            this.Controls.Add(this.adminKayitOlBtn);
             this.Controls.Add(this.adminGirisBtn);
             this.Controls.Add(this.adminSifreTextBox);
             this.Controls.Add(this.adminKullaniciAdiTextBox);
@@ -101,6 +134,7 @@
             this.Controls.Add(this.geriDön3Btn);
             this.Name = "adminGirisEkrani";
             this.Text = "adminGirisEkrani";
+            ((System.ComponentModel.ISupportInitialize)(this.sinavSistemiDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,5 +148,8 @@
         private System.Windows.Forms.TextBox adminKullaniciAdiTextBox;
         private System.Windows.Forms.Label AdminSifre;
         private System.Windows.Forms.Label adminKullaniciAdi;
+        private System.Windows.Forms.Button adminKayitOlBtn;
+        private System.Windows.Forms.LinkLabel adminSifremiUnuttumLbl;
+        private sinavSistemiDataSet sinavSistemiDataSet1;
     }
 }

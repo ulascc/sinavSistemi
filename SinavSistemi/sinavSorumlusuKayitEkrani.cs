@@ -12,44 +12,32 @@ using System.Data.SqlClient;
 
 namespace SinavSistemi
 {
-    public partial class ogrenciKayitEkrani : Form
+    public partial class sinavSorumlusuKayitEkrani : Form
     {
-        public ogrenciKayitEkrani()
+        public sinavSorumlusuKayitEkrani()
         {
             InitializeComponent();
         }
 
-        private void geriDön4Btn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ogrenciGirisEkrani ogrenciGiris = new ogrenciGirisEkrani();
-            ogrenciGiris.Show();
-        }
-
-       
         SqlConnection connect = new SqlConnection("Data Source=DESKTOP-K4L20RV;Initial Catalog=sinavSistemi;Integrated Security=True");
-
-        private void kayitOlBtn_Click(object sender, EventArgs e)
-        {   
-            
-
+        private void sorumluKayitOlBtn_Click(object sender, EventArgs e)
+        {
             try
             {
                 if (connect.State == ConnectionState.Closed)
                     connect.Open();
-                  
+
                 
 
                 string kayit = "insert into Users (kullaniciAdi,adi,soyadi,eMail,sifre,userTypeID) values (@kullaniciAdi,@adi,@soyadi,@eMail,@sifre,@userTypeID)";
-                SqlCommand komut = new SqlCommand(kayit,connect);
+                SqlCommand komut = new SqlCommand(kayit, connect);
 
-                komut.Parameters.AddWithValue("@kullaniciAdi", kullaniciAdiTextBox.Text);
-                komut.Parameters.AddWithValue("@adi", isimTextBox.Text);
-                komut.Parameters.AddWithValue("@soyadi", soyisimTextBox.Text);
-                komut.Parameters.AddWithValue("@eMail", MailTextBox.Text);
-                komut.Parameters.AddWithValue("@sifre", sifreTextBox.Text);
-                komut.Parameters.AddWithValue("@userTypeID",1);
-
+                komut.Parameters.AddWithValue("@kullaniciAdi", sorumluKullaniciAdiTextBox.Text);
+                komut.Parameters.AddWithValue("@adi", sorumluİsimTextBox.Text);
+                komut.Parameters.AddWithValue("@soyadi", sorumluSoyisimTextBox.Text);
+                komut.Parameters.AddWithValue("@eMail", sorumluMailTextBox.Text);
+                komut.Parameters.AddWithValue("@sifre", sorumluSifreTextBox.Text);
+                komut.Parameters.AddWithValue("@userTypeID", 2);
 
                 komut.ExecuteNonQuery();
                 connect.Close();
@@ -59,6 +47,13 @@ namespace SinavSistemi
             {
                 MessageBox.Show("hata oluştu " + hata.Message);
             }
+        }
+
+        private void geriDön7Btn_Click(object sender, EventArgs e)
+        {
+            sinavSorumlusuGirisEkrani sorumluGiris = new sinavSorumlusuGirisEkrani();
+            sorumluGiris.Show();
+            this.Hide();
         }
     }
 }

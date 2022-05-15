@@ -37,16 +37,19 @@ namespace SinavSistemi
         SqlCommand komut;
         SqlDataReader dr;
 
-        private void ogrGirisBtn_Click(object sender, EventArgs e)
+
+        public static string nick = "";
+        public void ogrGirisBtn_Click(object sender, EventArgs e)
         {
             string kullaniciAdi = ogrenciKullaniciAdiTextBox.Text;
             string sifre = ogrenciSifreTextBox.Text;
+                  
             baglanti = new SqlConnection("Data Source=DESKTOP-K4L20RV;Initial Catalog=sinavSistemi;Integrated Security=True");
             komut = new SqlCommand();
             baglanti.Open();
             komut.Connection = baglanti;
 
-            komut.CommandText = "select * from Users where kullaniciAdi= '" + ogrenciKullaniciAdiTextBox.Text + "' and sifre='" + ogrenciSifreTextBox.Text + "'";
+            komut.CommandText = "select * from Users where kullaniciAdi= '" + ogrenciKullaniciAdiTextBox.Text + "' and sifre='" + ogrenciSifreTextBox.Text + "'and userTypeID=1";
             dr = komut.ExecuteReader();
 
             if (dr.Read())
@@ -54,12 +57,24 @@ namespace SinavSistemi
                 ogrenciEkrani ogrEkrani = new ogrenciEkrani();
                 ogrEkrani.Show();
                 this.Hide();
+                
             }
             else
             {
                 MessageBox.Show("Kullanıcı adını ve şifrenizi kontrol ediniz.");
             }
             baglanti.Close();
+
+           nick = ogrenciKullaniciAdiTextBox.Text; // hangi öğrenci giris yaptıgını anlamamız için
+            
+            
+        }
+
+        private void ogrSifremiUnuttumLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ogrenciSifremiUnuttumEkrani ogrSifremiUnuttum = new ogrenciSifremiUnuttumEkrani();
+            ogrSifremiUnuttum.Show();
+            this.Hide();
         }
     }
 }

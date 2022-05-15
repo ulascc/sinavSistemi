@@ -45,7 +45,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 45);
+            this.label1.Location = new System.Drawing.Point(70, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(73, 83);
+            this.label2.Location = new System.Drawing.Point(70, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(24, 13);
             this.label2.TabIndex = 1;
@@ -63,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(73, 115);
+            this.label3.Location = new System.Drawing.Point(70, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 2;
@@ -72,7 +72,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(73, 144);
+            this.label4.Location = new System.Drawing.Point(70, 150);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 3;
@@ -81,7 +81,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(73, 175);
+            this.label5.Location = new System.Drawing.Point(70, 181);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(26, 13);
             this.label5.TabIndex = 4;
@@ -89,42 +89,42 @@
             // 
             // kullaniciAdiTextBox
             // 
-            this.kullaniciAdiTextBox.Location = new System.Drawing.Point(187, 42);
+            this.kullaniciAdiTextBox.Location = new System.Drawing.Point(184, 48);
             this.kullaniciAdiTextBox.Name = "kullaniciAdiTextBox";
             this.kullaniciAdiTextBox.Size = new System.Drawing.Size(100, 20);
             this.kullaniciAdiTextBox.TabIndex = 5;
             // 
             // sifreTextBox
             // 
-            this.sifreTextBox.Location = new System.Drawing.Point(187, 175);
+            this.sifreTextBox.Location = new System.Drawing.Point(184, 181);
             this.sifreTextBox.Name = "sifreTextBox";
             this.sifreTextBox.Size = new System.Drawing.Size(100, 20);
             this.sifreTextBox.TabIndex = 6;
             // 
             // MailTextBox
             // 
-            this.MailTextBox.Location = new System.Drawing.Point(187, 144);
+            this.MailTextBox.Location = new System.Drawing.Point(184, 150);
             this.MailTextBox.Name = "MailTextBox";
             this.MailTextBox.Size = new System.Drawing.Size(100, 20);
             this.MailTextBox.TabIndex = 7;
             // 
             // soyisimTextBox
             // 
-            this.soyisimTextBox.Location = new System.Drawing.Point(187, 108);
+            this.soyisimTextBox.Location = new System.Drawing.Point(184, 114);
             this.soyisimTextBox.Name = "soyisimTextBox";
             this.soyisimTextBox.Size = new System.Drawing.Size(100, 20);
             this.soyisimTextBox.TabIndex = 8;
             // 
             // isimTextBox
             // 
-            this.isimTextBox.Location = new System.Drawing.Point(187, 76);
+            this.isimTextBox.Location = new System.Drawing.Point(184, 82);
             this.isimTextBox.Name = "isimTextBox";
             this.isimTextBox.Size = new System.Drawing.Size(100, 20);
             this.isimTextBox.TabIndex = 9;
             // 
             // kayitOlBtn
             // 
-            this.kayitOlBtn.Location = new System.Drawing.Point(212, 225);
+            this.kayitOlBtn.Location = new System.Drawing.Point(209, 230);
             this.kayitOlBtn.Name = "kayitOlBtn";
             this.kayitOlBtn.Size = new System.Drawing.Size(75, 23);
             this.kayitOlBtn.TabIndex = 10;

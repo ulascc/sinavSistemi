@@ -34,6 +34,8 @@
             this.SorumluSifreTextBox = new System.Windows.Forms.TextBox();
             this.sorumluGirisBtn = new System.Windows.Forms.Button();
             this.sorumluKullaniciAdiTextBox = new System.Windows.Forms.TextBox();
+            this.sorumluKayitOlBtn = new System.Windows.Forms.Button();
+            this.sorumluSifremiUnuttumLbl = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // geriDönBtn
@@ -70,6 +72,7 @@
             this.SorumluSifreTextBox.Name = "SorumluSifreTextBox";
             this.SorumluSifreTextBox.Size = new System.Drawing.Size(100, 20);
             this.SorumluSifreTextBox.TabIndex = 4;
+            this.SorumluSifreTextBox.UseSystemPasswordChar = true;
             // 
             // sorumluGirisBtn
             // 
@@ -79,6 +82,7 @@
             this.sorumluGirisBtn.TabIndex = 5;
             this.sorumluGirisBtn.Text = "giris yap";
             this.sorumluGirisBtn.UseVisualStyleBackColor = true;
+            this.sorumluGirisBtn.Click += new System.EventHandler(this.sorumluGirisBtn_Click);
             // 
             // sorumluKullaniciAdiTextBox
             // 
@@ -87,11 +91,34 @@
             this.sorumluKullaniciAdiTextBox.Size = new System.Drawing.Size(100, 20);
             this.sorumluKullaniciAdiTextBox.TabIndex = 6;
             // 
+            // sorumluKayitOlBtn
+            // 
+            this.sorumluKayitOlBtn.Location = new System.Drawing.Point(190, 176);
+            this.sorumluKayitOlBtn.Name = "sorumluKayitOlBtn";
+            this.sorumluKayitOlBtn.Size = new System.Drawing.Size(75, 23);
+            this.sorumluKayitOlBtn.TabIndex = 7;
+            this.sorumluKayitOlBtn.Text = "kayıt ol";
+            this.sorumluKayitOlBtn.UseVisualStyleBackColor = true;
+            this.sorumluKayitOlBtn.Click += new System.EventHandler(this.sorumluKayitOlBtn_Click);
+            // 
+            // sorumluSifremiUnuttumLbl
+            // 
+            this.sorumluSifremiUnuttumLbl.AutoSize = true;
+            this.sorumluSifremiUnuttumLbl.Location = new System.Drawing.Point(210, 214);
+            this.sorumluSifremiUnuttumLbl.Name = "sorumluSifremiUnuttumLbl";
+            this.sorumluSifremiUnuttumLbl.Size = new System.Drawing.Size(77, 13);
+            this.sorumluSifremiUnuttumLbl.TabIndex = 8;
+            this.sorumluSifremiUnuttumLbl.TabStop = true;
+            this.sorumluSifremiUnuttumLbl.Text = "şifremi unuttum";
+            this.sorumluSifremiUnuttumLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.sorumluSifremiUnuttumLbl_LinkClicked);
+            // 
             // sinavSorumlusuGirisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(798, 450);
+            this.Controls.Add(this.sorumluSifremiUnuttumLbl);
+            this.Controls.Add(this.sorumluKayitOlBtn);
             this.Controls.Add(this.sorumluKullaniciAdiTextBox);
             this.Controls.Add(this.sorumluGirisBtn);
             this.Controls.Add(this.SorumluSifreTextBox);
@@ -113,5 +140,7 @@
         private System.Windows.Forms.TextBox SorumluSifreTextBox;
         private System.Windows.Forms.Button sorumluGirisBtn;
         private System.Windows.Forms.TextBox sorumluKullaniciAdiTextBox;
+        private System.Windows.Forms.Button sorumluKayitOlBtn;
+        private System.Windows.Forms.LinkLabel sorumluSifremiUnuttumLbl;
     }
 }
