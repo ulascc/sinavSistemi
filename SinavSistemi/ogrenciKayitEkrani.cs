@@ -30,8 +30,7 @@ namespace SinavSistemi
         SqlConnection connect = new SqlConnection("Data Source=DESKTOP-K4L20RV;Initial Catalog=sinavSistemi;Integrated Security=True");
 
         private void kayitOlBtn_Click(object sender, EventArgs e)
-        {   
-            
+        {  
 
             try
             {

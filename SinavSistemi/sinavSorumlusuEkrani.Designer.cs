@@ -40,9 +40,9 @@
             // 
             this.sorumluSoruEkleBtn.BackColor = System.Drawing.Color.Firebrick;
             this.sorumluSoruEkleBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.sorumluSoruEkleBtn.Location = new System.Drawing.Point(25, 179);
+            this.sorumluSoruEkleBtn.Location = new System.Drawing.Point(326, 257);
             this.sorumluSoruEkleBtn.Name = "sorumluSoruEkleBtn";
-            this.sorumluSoruEkleBtn.Size = new System.Drawing.Size(250, 42);
+            this.sorumluSoruEkleBtn.Size = new System.Drawing.Size(338, 69);
             this.sorumluSoruEkleBtn.TabIndex = 0;
             this.sorumluSoruEkleBtn.Text = "SORU EKLE";
             this.sorumluSoruEkleBtn.UseVisualStyleBackColor = false;
@@ -52,9 +52,9 @@
             // 
             this.sorumluOgrenciSonuclariBtn.BackColor = System.Drawing.Color.IndianRed;
             this.sorumluOgrenciSonuclariBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.sorumluOgrenciSonuclariBtn.Location = new System.Drawing.Point(25, 227);
+            this.sorumluOgrenciSonuclariBtn.Location = new System.Drawing.Point(377, 350);
             this.sorumluOgrenciSonuclariBtn.Name = "sorumluOgrenciSonuclariBtn";
-            this.sorumluOgrenciSonuclariBtn.Size = new System.Drawing.Size(185, 41);
+            this.sorumluOgrenciSonuclariBtn.Size = new System.Drawing.Size(244, 66);
             this.sorumluOgrenciSonuclariBtn.TabIndex = 1;
             this.sorumluOgrenciSonuclariBtn.Text = "ÖĞRENCİ SONUÇLARI";
             this.sorumluOgrenciSonuclariBtn.UseVisualStyleBackColor = false;
@@ -64,9 +64,9 @@
             // 
             this.sorumluCıkısBtn.BackColor = System.Drawing.Color.RosyBrown;
             this.sorumluCıkısBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.sorumluCıkısBtn.Location = new System.Drawing.Point(25, 274);
+            this.sorumluCıkısBtn.Location = new System.Drawing.Point(410, 446);
             this.sorumluCıkısBtn.Name = "sorumluCıkısBtn";
-            this.sorumluCıkısBtn.Size = new System.Drawing.Size(123, 32);
+            this.sorumluCıkısBtn.Size = new System.Drawing.Size(166, 60);
             this.sorumluCıkısBtn.TabIndex = 2;
             this.sorumluCıkısBtn.Text = "ÇIKIŞ YAP";
             this.sorumluCıkısBtn.UseVisualStyleBackColor = false;
@@ -75,9 +75,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(25, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(400, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 133);
+            this.pictureBox1.Size = new System.Drawing.Size(212, 209);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -86,13 +86,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.sorumluCıkısBtn);
             this.Controls.Add(this.sorumluOgrenciSonuclariBtn);
             this.Controls.Add(this.sorumluSoruEkleBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "sinavSorumlusuEkrani";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "sinavSorumlusuEkrani";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

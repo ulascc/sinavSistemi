@@ -12,6 +12,8 @@ namespace SinavSistemi
         /// Uygulamanın ana girdi noktası.
         /// </summary>
         [STAThread]
+
+
         static void Main()
         {
             Application.EnableVisualStyles();

@@ -21,5 +21,12 @@ namespace SinavSistemi
         {
             MessageBox.Show("yeni şifreniz mailinize gönderilmiştir");
         }
+
+        private void geriDön17Btn_Click(object sender, EventArgs e)
+        {
+            adminGirisEkrani adminGiris = new adminGirisEkrani();
+            adminGiris.Show();
+            this.Hide();
+        }
     }
 }

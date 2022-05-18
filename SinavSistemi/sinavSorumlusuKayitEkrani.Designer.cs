@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sinavSorumlusuKayitEkrani));
             this.sorumluKayitOlBtn = new System.Windows.Forms.Button();
             this.sorumluİsimTextBox = new System.Windows.Forms.TextBox();
             this.sorumluSoyisimTextBox = new System.Windows.Forms.TextBox();
@@ -40,101 +41,109 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.geriDön7Btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // sorumluKayitOlBtn
             // 
-            this.sorumluKayitOlBtn.Location = new System.Drawing.Point(209, 224);
+            this.sorumluKayitOlBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sorumluKayitOlBtn.Location = new System.Drawing.Point(520, 474);
             this.sorumluKayitOlBtn.Name = "sorumluKayitOlBtn";
-            this.sorumluKayitOlBtn.Size = new System.Drawing.Size(75, 23);
+            this.sorumluKayitOlBtn.Size = new System.Drawing.Size(88, 38);
             this.sorumluKayitOlBtn.TabIndex = 21;
-            this.sorumluKayitOlBtn.Text = "kayıt ol";
+            this.sorumluKayitOlBtn.Text = "KAYIT OL";
             this.sorumluKayitOlBtn.UseVisualStyleBackColor = true;
             this.sorumluKayitOlBtn.Click += new System.EventHandler(this.sorumluKayitOlBtn_Click);
             // 
             // sorumluİsimTextBox
             // 
-            this.sorumluİsimTextBox.Location = new System.Drawing.Point(184, 75);
+            this.sorumluİsimTextBox.Location = new System.Drawing.Point(490, 283);
             this.sorumluİsimTextBox.Name = "sorumluİsimTextBox";
-            this.sorumluİsimTextBox.Size = new System.Drawing.Size(100, 20);
+            this.sorumluİsimTextBox.Size = new System.Drawing.Size(152, 20);
             this.sorumluİsimTextBox.TabIndex = 20;
             // 
             // sorumluSoyisimTextBox
             // 
-            this.sorumluSoyisimTextBox.Location = new System.Drawing.Point(184, 107);
+            this.sorumluSoyisimTextBox.Location = new System.Drawing.Point(490, 327);
             this.sorumluSoyisimTextBox.Name = "sorumluSoyisimTextBox";
-            this.sorumluSoyisimTextBox.Size = new System.Drawing.Size(100, 20);
+            this.sorumluSoyisimTextBox.Size = new System.Drawing.Size(152, 20);
             this.sorumluSoyisimTextBox.TabIndex = 19;
             // 
             // sorumluMailTextBox
             // 
-            this.sorumluMailTextBox.Location = new System.Drawing.Point(184, 143);
+            this.sorumluMailTextBox.Location = new System.Drawing.Point(490, 374);
             this.sorumluMailTextBox.Name = "sorumluMailTextBox";
-            this.sorumluMailTextBox.Size = new System.Drawing.Size(100, 20);
+            this.sorumluMailTextBox.Size = new System.Drawing.Size(152, 20);
             this.sorumluMailTextBox.TabIndex = 18;
             // 
             // sorumluSifreTextBox
             // 
-            this.sorumluSifreTextBox.Location = new System.Drawing.Point(184, 174);
+            this.sorumluSifreTextBox.Location = new System.Drawing.Point(490, 419);
             this.sorumluSifreTextBox.Name = "sorumluSifreTextBox";
-            this.sorumluSifreTextBox.Size = new System.Drawing.Size(100, 20);
+            this.sorumluSifreTextBox.Size = new System.Drawing.Size(152, 20);
             this.sorumluSifreTextBox.TabIndex = 17;
             // 
             // sorumluKullaniciAdiTextBox
             // 
-            this.sorumluKullaniciAdiTextBox.Location = new System.Drawing.Point(184, 41);
+            this.sorumluKullaniciAdiTextBox.Location = new System.Drawing.Point(490, 238);
             this.sorumluKullaniciAdiTextBox.Name = "sorumluKullaniciAdiTextBox";
-            this.sorumluKullaniciAdiTextBox.Size = new System.Drawing.Size(100, 20);
+            this.sorumluKullaniciAdiTextBox.Size = new System.Drawing.Size(152, 20);
             this.sorumluKullaniciAdiTextBox.TabIndex = 16;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(70, 174);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(380, 420);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 13);
+            this.label5.Size = new System.Drawing.Size(42, 17);
             this.label5.TabIndex = 15;
-            this.label5.Text = "şifre";
+            this.label5.Text = "Şifre";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(70, 143);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(380, 377);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 13);
+            this.label4.Size = new System.Drawing.Size(52, 17);
             this.label4.TabIndex = 14;
-            this.label4.Text = "e mail";
+            this.label4.Text = "E Mail";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(70, 114);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(380, 328);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
+            this.label3.Size = new System.Drawing.Size(63, 17);
             this.label3.TabIndex = 13;
-            this.label3.Text = "soyisim";
+            this.label3.Text = "Soyisim";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 82);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(380, 283);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 13);
+            this.label2.Size = new System.Drawing.Size(36, 17);
             this.label2.TabIndex = 12;
-            this.label2.Text = "isim";
+            this.label2.Text = "İsim";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(70, 44);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(380, 241);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
+            this.label1.Size = new System.Drawing.Size(97, 17);
             this.label1.TabIndex = 11;
-            this.label1.Text = "kullanıcı adı";
+            this.label1.Text = "Kullanıcı Adı";
             // 
             // geriDön7Btn
             // 
-            this.geriDön7Btn.Location = new System.Drawing.Point(725, 0);
+            this.geriDön7Btn.Location = new System.Drawing.Point(926, 0);
             this.geriDön7Btn.Name = "geriDön7Btn";
             this.geriDön7Btn.Size = new System.Drawing.Size(75, 23);
             this.geriDön7Btn.TabIndex = 22;
@@ -142,11 +151,23 @@
             this.geriDön7Btn.UseVisualStyleBackColor = true;
             this.geriDön7Btn.Click += new System.EventHandler(this.geriDön7Btn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(453, 46);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(189, 152);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            // 
             // sinavSorumlusuKayitEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.geriDön7Btn);
             this.Controls.Add(this.sorumluKayitOlBtn);
             this.Controls.Add(this.sorumluİsimTextBox);
@@ -159,8 +180,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "sinavSorumlusuKayitEkrani";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "sinavSorumlusuKayitEkrani";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +204,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button geriDön7Btn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

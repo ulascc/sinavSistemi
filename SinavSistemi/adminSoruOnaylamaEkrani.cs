@@ -92,11 +92,14 @@ namespace SinavSistemi
                     baglanti2.Close();
                 }
 
-                MessageBox.Show("secilen sorular onaylanmıştır");
 
             }
 
-             
+            // secilen satırı DataGridView' den silen kod 99-100
+            int rowIndex = sorularDataGridView.CurrentCell.RowIndex;
+            sorularDataGridView.Rows.RemoveAt(rowIndex);
+
+            MessageBox.Show("secilen sorular onaylanmıştır");
 
         }
     }

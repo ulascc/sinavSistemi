@@ -44,9 +44,9 @@
             // 
             this.sorularDataGridView.AllowUserToDeleteRows = false;
             this.sorularDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.sorularDataGridView.Location = new System.Drawing.Point(-1, 23);
+            this.sorularDataGridView.Location = new System.Drawing.Point(0, 100);
             this.sorularDataGridView.Name = "sorularDataGridView";
-            this.sorularDataGridView.Size = new System.Drawing.Size(800, 207);
+            this.sorularDataGridView.Size = new System.Drawing.Size(1000, 207);
             this.sorularDataGridView.TabIndex = 0;
             // 
             // dataGridView2
@@ -59,25 +59,25 @@
             // 
             // silinecekSoruTextBox
             // 
-            this.silinecekSoruTextBox.Location = new System.Drawing.Point(230, 281);
+            this.silinecekSoruTextBox.Location = new System.Drawing.Point(405, 465);
             this.silinecekSoruTextBox.Name = "silinecekSoruTextBox";
-            this.silinecekSoruTextBox.Size = new System.Drawing.Size(51, 20);
+            this.silinecekSoruTextBox.Size = new System.Drawing.Size(64, 20);
             this.silinecekSoruTextBox.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(12, 288);
+            this.label1.Location = new System.Drawing.Point(388, 439);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 13);
+            this.label1.Size = new System.Drawing.Size(218, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "silmek istediğiniz soru ID\'sini yazınız";
+            this.label1.Text = "Silmek İstediğiniz Soru ID\'sini Yazınız";
             // 
             // soruSilBtn
             // 
             this.soruSilBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.soruSilBtn.Location = new System.Drawing.Point(307, 278);
+            this.soruSilBtn.Location = new System.Drawing.Point(489, 462);
             this.soruSilBtn.Name = "soruSilBtn";
             this.soruSilBtn.Size = new System.Drawing.Size(75, 23);
             this.soruSilBtn.TabIndex = 4;
@@ -88,9 +88,9 @@
             // soruOnaylaBtn
             // 
             this.soruOnaylaBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.soruOnaylaBtn.Location = new System.Drawing.Point(230, 320);
+            this.soruOnaylaBtn.Location = new System.Drawing.Point(436, 362);
             this.soruOnaylaBtn.Name = "soruOnaylaBtn";
-            this.soruOnaylaBtn.Size = new System.Drawing.Size(106, 23);
+            this.soruOnaylaBtn.Size = new System.Drawing.Size(118, 32);
             this.soruOnaylaBtn.TabIndex = 5;
             this.soruOnaylaBtn.Text = "Soruyu Onayla";
             this.soruOnaylaBtn.UseVisualStyleBackColor = true;
@@ -98,11 +98,11 @@
             // 
             // geriDön12Btn
             // 
-            this.geriDön12Btn.Location = new System.Drawing.Point(721, -4);
+            this.geriDön12Btn.Location = new System.Drawing.Point(922, 0);
             this.geriDön12Btn.Name = "geriDön12Btn";
             this.geriDön12Btn.Size = new System.Drawing.Size(78, 27);
             this.geriDön12Btn.TabIndex = 6;
-            this.geriDön12Btn.Text = "geri dön";
+            this.geriDön12Btn.Text = "Geri Dön";
             this.geriDön12Btn.UseVisualStyleBackColor = true;
             this.geriDön12Btn.Click += new System.EventHandler(this.geriDön12Btn_Click);
             // 
@@ -110,17 +110,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(12, 325);
+            this.label2.Location = new System.Drawing.Point(384, 330);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(215, 13);
+            this.label2.Size = new System.Drawing.Size(222, 13);
             this.label2.TabIndex = 8;
-            this.label2.Text = "onaylamak istediğiniz soruları seçiniz";
+            this.label2.Text = "Onaylamak İstediğiniz Soruları Seçiniz";
             // 
             // adminSoruOnaylamaEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.geriDön12Btn);
             this.Controls.Add(this.soruOnaylaBtn);
@@ -129,7 +130,9 @@
             this.Controls.Add(this.silinecekSoruTextBox);
             this.Controls.Add(this.sorularDataGridView);
             this.Controls.Add(this.dataGridView2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "adminSoruOnaylamaEkrani";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "adminSoruOnaylamaEkrani";
             this.Load += new System.EventHandler(this.adminSoruOnaylamaEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sorularDataGridView)).EndInit();

@@ -23,9 +23,7 @@ namespace SinavSistemi
             ogrenciGirisEkrani ogrGiris =new ogrenciGirisEkrani();
             ogrGiris.Show();
             this.Hide(); 
-
-
-            
+  
         }
 
         private void adminGirisBtn_Click(object sender, EventArgs e)
@@ -40,11 +38,6 @@ namespace SinavSistemi
             sinavSorumlusuGirisEkrani sinavS = new sinavSorumlusuGirisEkrani();
             sinavS.Show();
             this.Hide();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

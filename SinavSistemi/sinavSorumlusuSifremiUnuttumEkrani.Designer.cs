@@ -36,37 +36,39 @@
             // 
             // geriDön8Btn
             // 
-            this.geriDön8Btn.Location = new System.Drawing.Point(726, 0);
+            this.geriDön8Btn.Location = new System.Drawing.Point(926, 1);
             this.geriDön8Btn.Name = "geriDön8Btn";
             this.geriDön8Btn.Size = new System.Drawing.Size(75, 23);
             this.geriDön8Btn.TabIndex = 0;
-            this.geriDön8Btn.Text = "geri dön";
+            this.geriDön8Btn.Text = "Geri Dön";
             this.geriDön8Btn.UseVisualStyleBackColor = true;
             this.geriDön8Btn.Click += new System.EventHandler(this.geriDön8Btn_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 66);
+            this.textBox1.Location = new System.Drawing.Point(427, 207);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(169, 20);
             this.textBox1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(58, 66);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(359, 207);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 13);
+            this.label1.Size = new System.Drawing.Size(58, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "mail";
+            this.label1.Text = "E Mail";
             // 
             // sorumluYeniSifreAlBtn
             // 
-            this.sorumluYeniSifreAlBtn.Location = new System.Drawing.Point(125, 105);
+            this.sorumluYeniSifreAlBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sorumluYeniSifreAlBtn.Location = new System.Drawing.Point(451, 251);
             this.sorumluYeniSifreAlBtn.Name = "sorumluYeniSifreAlBtn";
-            this.sorumluYeniSifreAlBtn.Size = new System.Drawing.Size(75, 23);
+            this.sorumluYeniSifreAlBtn.Size = new System.Drawing.Size(133, 37);
             this.sorumluYeniSifreAlBtn.TabIndex = 3;
-            this.sorumluYeniSifreAlBtn.Text = "yeni sifre al";
+            this.sorumluYeniSifreAlBtn.Text = "YENİ ŞİFRE AL";
             this.sorumluYeniSifreAlBtn.UseVisualStyleBackColor = true;
             this.sorumluYeniSifreAlBtn.Click += new System.EventHandler(this.sorumluYeniSifreAlBtn_Click);
             // 
@@ -74,12 +76,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1000, 600);
             this.Controls.Add(this.sorumluYeniSifreAlBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.geriDön8Btn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "sinavSorumlusuSifremiUnuttumEkrani";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "sinavSorumlusuSifremiUnuttumEkrani";
             this.ResumeLayout(false);
             this.PerformLayout();
